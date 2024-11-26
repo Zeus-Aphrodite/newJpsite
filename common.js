@@ -14,6 +14,9 @@ function openPopup(index) {
     popup.style.opacity = "1";  // 表示時にopacityを1にする
   }, 10); // 少し遅らせてクラスを追加
 
+  const popupContent = document.querySelector(".popup-content");
+  popupContent.scrollTop = 0;
+
     // ボタンの表示/非表示を切り替え
     toggleNavigationButtons();
 }
@@ -36,6 +39,9 @@ function nextPopup() {
   const content = document.getElementById(`item${currentIndex}`).innerHTML;
   document.getElementById("popupText").innerHTML = content;
 
+  const popupContent = document.querySelector(".popup-content");
+  popupContent.scrollTop = 0;
+
     // ボタンの表示/非表示を切り替え
     toggleNavigationButtons();
 }
@@ -45,6 +51,9 @@ function prevPopup() {
   const content = document.getElementById(`item${currentIndex}`).innerHTML;
   document.getElementById("popupText").innerHTML = content;
 
+  const popupContent = document.querySelector(".popup-content");
+  popupContent.scrollTop = 0;
+  
     // ボタンの表示/非表示を切り替え
     toggleNavigationButtons();
 }
@@ -90,7 +99,7 @@ $(function() {
     });
 
     if ($(this).hasClass("open")) {
-      textElement.replaceWith("詳細を閉じる");
+      textElement.replaceWith("詳細を非表示にする");
     } else {
       textElement.replaceWith("詳細を表示する");
     }
@@ -98,26 +107,44 @@ $(function() {
 });
 
 // -----popup 2-----
-(function() {
+(function () {
   window.SecondNamespace = {
       currentIndex: 0,
-      openPopup: function(index) {
+
+      // ポップアップを開く関数
+      openPopup: function (index) {
           this.currentIndex = index;
+
+          // ポップアップの内容を取得して挿入
           const content = document.getElementById(`second-item${this.currentIndex}`).innerHTML;
           document.getElementById("second-popupText").innerHTML = content;
 
+          // ポップアップ全体のスタイル設定
           const popup = document.getElementById("second-popup");
           popup.style.display = "flex";
           popup.style.opacity = "0";
+
+          // クローズボタンのクラス設定
+          const closeButton = popup.querySelector('.second-close');
+          closeButton.classList.remove("popup-0", "popup-1"); // 既存のクラスを削除
+          closeButton.classList.add(`popup-${this.currentIndex}`); // 適切なクラスを追加
+
+          // 表示とフェードイン
           setTimeout(() => {
               popup.classList.add("show");
               popup.style.opacity = "1";
           }, 10);
 
-          // ボタンの表示制御を更新
+          // スクロール位置をリセット
+          const popupContent = document.querySelector(".second-popup-content");
+          popupContent.scrollTop = 0;
+
+          // ボタンの表示制御
           this.updateButtonVisibility();
       },
-      closePopup: function(event) {
+
+      // ポップアップを閉じる関数
+      closePopup: function (event) {
           if (event.target !== document.querySelector('.second-popup-content') && !event.target.closest('.second-nav')) {
               const popup = document.getElementById("second-popup");
               popup.style.opacity = "0";
@@ -127,24 +154,40 @@ $(function() {
               }, 600);
           }
       },
-      nextPopup: function() {
-          this.currentIndex = (this.currentIndex + 1) % 2; // 最大数を適切に設定
+
+      // 次のポップアップを表示
+      nextPopup: function () {
+          this.currentIndex = (this.currentIndex + 1) % 2; // ポップアップの最大数に応じて変更
           const content = document.getElementById(`second-item${this.currentIndex}`).innerHTML;
           document.getElementById("second-popupText").innerHTML = content;
-          // ボタンの表示制御を更新
+
+          // クローズボタンのクラスを更新
+          const closeButton = document.querySelector('.second-close');
+          closeButton.classList.remove("popup-0", "popup-1");
+          closeButton.classList.add(`popup-${this.currentIndex}`);
+
+          // ボタンの表示制御
           this.updateButtonVisibility();
       },
-      prevPopup: function() {
-          this.currentIndex = (this.currentIndex - 1 + 2) % 2; // 最大数を適切に設定
+
+      // 前のポップアップを表示
+      prevPopup: function () {
+          this.currentIndex = (this.currentIndex - 1 + 2) % 2; // ポップアップの最大数に応じて変更
           const content = document.getElementById(`second-item${this.currentIndex}`).innerHTML;
           document.getElementById("second-popupText").innerHTML = content;
-          // ボタンの表示制御を更新
+
+          // クローズボタンのクラスを更新
+          const closeButton = document.querySelector('.second-close');
+          closeButton.classList.remove("popup-0", "popup-1");
+          closeButton.classList.add(`popup-${this.currentIndex}`);
+
+          // ボタンの表示制御
           this.updateButtonVisibility();
-        },
-        updateButtonVisibility: function () {
-          // prevボタンの表示/非表示制御
+      },
+
+      // ボタンの表示/非表示を制御
+      updateButtonVisibility: function () {
           const prevButton = document.querySelector('.second-prev');
-          // nextボタンの表示/非表示制御
           const nextButton = document.querySelector('.second-next');
 
           if (this.currentIndex === 0) {
@@ -157,6 +200,7 @@ $(function() {
       }
   };
 })();
+
 
 $(function () {
   var headerHight = 100; //ヘッダーの高さ
