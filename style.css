@@ -96,7 +96,7 @@ h6{
   width: 260px;
   padding-bottom: 0 !important;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -261,7 +261,7 @@ h6{
   width: 335px;
   padding: 2rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 30px;
   cursor: pointer;
   border: none;
@@ -296,7 +296,7 @@ h6{
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 3rem;
 }
 
@@ -336,7 +336,7 @@ h6{
 }
 
 .area-2 .container .box h4{
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 2rem;
   color: var(--gray-color-2);
 }
@@ -476,6 +476,7 @@ h6{
 .area-3 .point-link .box h4{
   padding: 1.5rem 0 2rem;
   color: #222;
+  font-weight: 600;
 }
 
 .area-3 .point-link .box .btn{
@@ -566,6 +567,7 @@ h6{
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  font-weight: 600;
 }
 
 .point-heading .ttl .right img{
@@ -603,6 +605,7 @@ h6{
   font-weight: 500;
   text-align: center;
   padding-bottom: 4.6rem;
+  font-weight: 600;
 }
 
 .point-heading .pick.deco{
@@ -837,10 +840,12 @@ h6{
 .area-4 .place-container .txt h4{
   padding-bottom: 1rem;
   color: var(--main-color);
+  font-weight: 600;
 }
 
 .area-4 .place-container .txt h6{
   color: var(--main-color);
+  font-weight: 600;
 }
 
 .area-4 .place-container .txt .people{
@@ -858,7 +863,7 @@ h6{
   opacity: 0.7;
   font-size: 2.4rem;
   text-decoration: line-through;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Arial";
 }
 
@@ -915,7 +920,7 @@ h6{
 
 .area-4 .type .off{
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   display: inline-block;
   margin: 1.5rem auto 2rem;
@@ -991,7 +996,7 @@ h6{
   padding: 0.5rem;
   border-radius: 4px;
   margin: 1rem auto 2.6rem;
-  width: 90%;
+  width: 95%;
 }
 
 .area-4 .type .down.pop-in{
@@ -999,9 +1004,9 @@ h6{
 }
 
 .area-4 .type .down span{
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Arial";
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .area-4 table{
@@ -1034,8 +1039,12 @@ h6{
 .area-4 tr td:nth-child(1){
   background-color: var(--gray-color-5);
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: left;
+}
+
+.area-4 .pop3-td1{
+  width: 112px;
 }
 
 .area-4 tr td{
@@ -1164,7 +1173,7 @@ h6{
 .area-5 .accordion_one .accordion_header {
   background-color: var(--bg-color-2);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 2rem;
   border-radius: 8px;
   position: relative;
@@ -1354,6 +1363,11 @@ h6{
   width: 124px;
   padding: 10px 0;
 }
+
+.area-5 tr td:nth-child(1){
+  font-weight: 600;
+}
+
 
 .area-5 .border{
   border: 1px solid #959595;
@@ -1563,6 +1577,8 @@ h6{
 
 .area-6 .box .price-2 {
   color: var(--main-color);
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .area-6 .box .price-2 .number {
@@ -1713,7 +1729,7 @@ h6{
 .area-6 .pop-in .service .pick.deco {
   position: relative;
   margin: 1.6rem auto;
-  width: 235px;
+  width: 262px;
   padding-bottom: 0 !important;
   font-size: 1.8rem;
   font-weight: 500;
@@ -1902,7 +1918,7 @@ h6{
 .area-7 .accordion_one .accordion_header {
   background-color: var(--bg-color-2);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 2rem 4rem 2rem 2rem;
   border-radius: 8px;
   position: relative;
@@ -2023,6 +2039,7 @@ h6{
 
 .area-7 .box_one .ac-container .flex .txt h6{
   line-height: 1.5;
+  font-weight: 600;
 }
 
 .area-7 .box_one .ac-container .flex .txt span{
@@ -2110,6 +2127,7 @@ h6{
 
 .area-8 .container-1 .left h5{
   padding-top: 1.6rem;
+  font-weight: 600;
 }
 
 .area-8 .container-1 .left h5 span{
@@ -2138,11 +2156,13 @@ h6{
   font-size: 2.8rem;
   color: var(--main-color);
   text-align: center;
+  font-weight: 600;
 }
 
 .area-8 .container-1 .right h5{
   padding: 1.6rem 0;
   line-height: 1.75;
+  font-weight: 600;
 }
 
 .area-8 .container-1 .right h5 span{
@@ -2217,7 +2237,7 @@ h6{
 
 .area-9 .accordion-wrapper .box p{
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .area-9 .accordion-4-a{
@@ -2232,8 +2252,8 @@ h6{
 
 .area-9 .accordion_one .accordion_header-9 {
   background-color: var(--bg-color);
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   padding: 2rem;
   border-radius: 0 0 8px 8px;
   position: relative;
@@ -2416,7 +2436,7 @@ h6{
 .area-10 .accordion_one .accordion_header {
   background-color: var(--bg-color-2);
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 2rem;
   border-radius: 8px;
   position: relative;
@@ -2535,6 +2555,11 @@ h6{
   color: var(--white-color);
 }
 
+.area-11 .container .right h5{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 .area-11 .container .right h5 span{
   position: relative;
   display: inline-block;
@@ -2560,13 +2585,14 @@ h6{
   margin: 2.4rem auto 4.8rem;
   color: var(--white-color);
   text-align: center;
+  font-weight: 300;
 }
 
 .area-11 .custom-button {
   width: 335px;
   padding: 2rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 30px;
   cursor: pointer;
   border: none;
@@ -2612,6 +2638,7 @@ h6{
   position: relative;
   text-align: center;
   z-index: 1;
+  font-weight: 600;
 }
 
 .area-12 .batsu {
@@ -2685,6 +2712,7 @@ h6{
 
 .area-13 h4{
   text-align: center;
+  font-weight: 600;
 }
 
 .area-13 .accordion_one {
@@ -2780,7 +2808,7 @@ h6{
   width: 335px;
   padding: 2rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 30px;
   cursor: pointer;
   border: none;
@@ -2874,6 +2902,7 @@ footer{
 footer h4{
   text-align: center;
   padding-top: 3.2rem;
+  font-weight: 600;
 }
 
 footer .btn-link{
@@ -2889,7 +2918,7 @@ footer .btn-link a {
   flex: 1;
   padding: 2rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 30px;
   cursor: pointer;
   border: none;
