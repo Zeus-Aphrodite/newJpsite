@@ -174,8 +174,6 @@ h6 {
   display: none;
 }
 
-
-
 .chat-support {
   width: 180px;
   height: 65px;
@@ -1069,8 +1067,6 @@ h6 {
     max-height: 70vh;
   }
 }
-
-
 
 @media (max-width: 768px) {
   .grid {
@@ -3053,7 +3049,17 @@ footer .copyright {
     max-width: 100%;
     padding: 0 2.5%;
   }
-
+  @media (max-width: 414px) {
+    .popup .close {
+      top: 7%;
+    }
+    .second-popup .second-close.popup-0 {
+      top: 6% !important;
+    }
+    .second-close.popup-1 {
+      top: 6% !important;
+    }
+  }
   .pop-sc-position-a {
     position: relative;
   }
