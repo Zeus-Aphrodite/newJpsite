@@ -3042,6 +3042,17 @@ footer .copyright {
     width: 100%;
   }
 }
+@media (max-width: 1920px) {
+  .popup .close {
+    top: 14%;
+  }
+  .second-close.popup-1{
+    top: 9% !important;
+  }
+  .second-popup .second-close.popup-0{
+    top: 20% !important;
+  }
+}
 @media (max-width: 1440px) {
   .popup .close {
     top: 8%;
