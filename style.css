@@ -751,7 +751,7 @@ h6 {
   color: #000;
   font-size: 18px;
   cursor: pointer;
-  top: 6%;
+  top: 27.5%;
   right: 50%;
   width: 30px;
   height: 30px;
@@ -762,27 +762,7 @@ h6 {
   justify-content: center;
   z-index: 999;
 }
-@media (max-width: 1440px) {
-  .popup .close {
-    top: 8%;
-  }
-}
-@media (max-width: 1024px) {
-  .popup .close {
-    top: 6%;
-  }
-  .second-popup .second-close.popup-0{
-    top: 6% !important;
-  }
-}
-@media (max-width: 768px) {
-  .popup .close {
-    top: 9%;
-  }
-  .second-popup .second-close.popup-0{
-    top: 9% !important;
-  }
-}
+
 .popup .prev {
   top: 50%;
   left: 50%;
@@ -1546,7 +1526,7 @@ td {
   color: #000;
   font-size: 18px;
   cursor: pointer;
-  top: 6%;
+  top: 31%;
   right: 50%;
   width: 30px;
   height: 30px;
@@ -1883,7 +1863,7 @@ td {
 
 
 .second-close.popup-1 {
-  top: 6% !important;
+  top: 24% !important;
   right: 50% !important;
 }
 
@@ -3060,5 +3040,32 @@ footer .copyright {
 
   footer .btn-link a {
     width: 100%;
+  }
+}
+@media (max-width: 1440px) {
+  .popup .close {
+    top: 8%;
+  }
+  .second-close.popup-1{
+    top: 6% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .popup .close {
+    top: 6%;
+  }
+  .second-popup .second-close.popup-0{
+    top: 6% !important;
+  }
+}
+@media (max-width: 768px) {
+  .popup .close {
+    top: 9%;
+  }
+  .second-popup .second-close.popup-0{
+    top: 9% !important;
+  }
+  .second-close.popup-1{
+    top: 9% !important;
   }
 }
