@@ -3023,13 +3023,13 @@ footer .copyright {
 }
 @media (max-width: 768px) {
   .popup .close {
-    top: 9%;
-  }
+    top: 13%;
+}
   .second-popup .second-close.popup-0 {
-    top: 9% !important;
+    top: 20% !important;
   }
   .second-close.popup-1 {
-    top: 9% !important;
+    top: 8% !important;
   }
 }
 @media (max-width: 765px) {
