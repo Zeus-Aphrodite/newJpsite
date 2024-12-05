@@ -3049,17 +3049,7 @@ footer .copyright {
     max-width: 100%;
     padding: 0 2.5%;
   }
-  @media (max-width: 414px) {
-    .popup .close {
-      top: 7%;
-    }
-    .second-popup .second-close.popup-0 {
-      top: 6% !important;
-    }
-    .second-close.popup-1 {
-      top: 6% !important;
-    }
-  }
+
   .pop-sc-position-a {
     position: relative;
   }
@@ -3080,7 +3070,25 @@ footer .copyright {
     opacity: 0; /* 非表示状態 */
   }
 }
-
+@media (max-width: 430px) {
+  .popup .close {
+    top: 8%;
+  }
+  .second-popup .second-close.popup-0 {
+    top: 7% !important;
+  }
+}
+@media (max-width: 414px) {
+  .popup .close {
+    top: 7%;
+  }
+  .second-popup .second-close.popup-0 {
+    top: 6% !important;
+  }
+  .second-close.popup-1 {
+    top: 6% !important;
+  }
+}
 @media (max-width: 375px) {
   .popup .close {
     top: 6%;
