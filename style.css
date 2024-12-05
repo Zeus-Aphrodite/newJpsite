@@ -729,7 +729,6 @@ h6 {
   opacity: 1; /* フェードイン */
 }
 
-
 .popup .prev,
 .popup .next {
   position: absolute;
@@ -1148,7 +1147,6 @@ h6 {
     width: 74%;
   }
 
-
   .area-4 table .first-width {
     width: 120px;
   }
@@ -1491,7 +1489,7 @@ td {
   opacity: 1; /* フェードイン */
 }
 
-.second-popup .second-close{
+.second-popup .second-close {
   position: absolute;
   border-radius: 50%;
   background: white;
@@ -1514,7 +1512,7 @@ td {
   justify-content: center;
   z-index: 999;
 }
-.second-popup .second-close.popup-0{
+.second-popup .second-close.popup-0 {
   position: absolute;
   border-radius: 50%;
   background: white;
@@ -1538,7 +1536,7 @@ td {
   z-index: 999;
 }
 @media (max-width: 1440px) {
-  .second-popup .second-close.popup-0{
+  .second-popup .second-close.popup-0 {
     top: 15%;
   }
 }
@@ -1550,8 +1548,6 @@ td {
   font-size: 16px;
   cursor: pointer;
 }
-
-
 
 @media (max-width: 765px) {
   .popup .close {
@@ -1860,8 +1856,6 @@ td {
   padding-top: 8rem;
 }
 
-
-
 .second-close.popup-1 {
   top: 24% !important;
   right: 50% !important;
@@ -1886,10 +1880,10 @@ td {
     top: 9% !important;
     right: 6% !important;
   }
-  .second-close.popup-1{
+  .second-close.popup-1 {
     right: 7% !important;
   }
-  .popup .close{
+  .popup .close {
     top: 9%;
     right: 6%;
   }
@@ -3046,10 +3040,10 @@ footer .copyright {
   .popup .close {
     top: 14%;
   }
-  .second-close.popup-1{
+  .second-close.popup-1 {
     top: 9% !important;
   }
-  .second-popup .second-close.popup-0{
+  .second-popup .second-close.popup-0 {
     top: 20% !important;
   }
 }
@@ -3057,7 +3051,7 @@ footer .copyright {
   .popup .close {
     top: 8%;
   }
-  .second-close.popup-1{
+  .second-close.popup-1 {
     top: 6% !important;
   }
 }
@@ -3065,7 +3059,7 @@ footer .copyright {
   .popup .close {
     top: 6%;
   }
-  .second-popup .second-close.popup-0{
+  .second-popup .second-close.popup-0 {
     top: 6% !important;
   }
 }
@@ -3073,10 +3067,22 @@ footer .copyright {
   .popup .close {
     top: 9%;
   }
-  .second-popup .second-close.popup-0{
+  .second-popup .second-close.popup-0 {
     top: 9% !important;
   }
-  .second-close.popup-1{
+  .second-close.popup-1 {
     top: 9% !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .popup .close {
+    top: 6%;
+  }
+  .second-popup .second-close.popup-0 {
+    top: 6% !important;
+  }
+  .second-close.popup-1 {
+    top: 6% !important;
   }
 }
