@@ -212,6 +212,34 @@ h6 {
   cursor: pointer;
 }
 
+@media (max-width: 475px) {
+  .table-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0 2.5%;
+  }
+
+  .pop-sc-position-a {
+    position: relative;
+  }
+
+  .pop-sc-a {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: opacity 0.5s ease;
+  }
+
+  .pop-sc-a.hidden {
+    opacity: 0; /* 非表示状態 */
+  }
+}
 
 /* TOP */
 .key-visual {
@@ -3013,113 +3041,30 @@ footer .copyright {
     width: 100%;
   }
 }
-@media (max-width: 1920px) {
-  .popup .close {
-    top: 14%;
-  }
-  .second-close.popup-1 {
-    top: 9% !important;
-  }
-  .second-popup .second-close.popup-0 {
-    top: 20% !important;
-  }
-}
 @media (max-width: 1440px) {
   .popup .close {
     top: 8%;
   }
-  .second-close.popup-1 {
+  .second-close.popup-1{
     top: 6% !important;
   }
-  .second-popup .second-close.popup-0 {
-    top: 15%;
-  }
 }
-
 @media (max-width: 1024px) {
   .popup .close {
     top: 6%;
   }
-  .second-popup .second-close.popup-0 {
+  .second-popup .second-close.popup-0{
     top: 6% !important;
   }
 }
 @media (max-width: 768px) {
   .popup .close {
-    top: 13%;
-}
-  .second-popup .second-close.popup-0 {
-    top: 20% !important;
+    top: 9%;
   }
-  .second-close.popup-1 {
-    top: 8% !important;
+  .second-popup .second-close.popup-0{
+    top: 9% !important;
   }
-}
-@media (max-width: 765px) {
-  .pc {
-    display: none;
-  }
-
-  .sp {
-    display: block;
-  }
-}
-
-@media (max-width: 475px) {
-  .table-container {
-    overflow-x: auto;
-    white-space: nowrap;
-    max-width: 100%;
-    padding: 0 2.5%;
-  }
-
-  .pop-sc-position-a {
-    position: relative;
-  }
-
-  .pop-sc-a {
-    position: absolute;
-    width: 120px;
-    height: auto;
-    opacity: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    transition: opacity 0.5s ease;
-  }
-
-  .pop-sc-a.hidden {
-    opacity: 0; /* 非表示状態 */
-  }
-}
-@media (max-width: 430px) {
-  .popup .close {
-    top: 8%;
-  }
-  .second-popup .second-close.popup-0 {
-    top: 7% !important;
-  }
-}
-@media (max-width: 414px) {
-  .popup .close {
-    top: 7%;
-  }
-  .second-popup .second-close.popup-0 {
-    top: 6% !important;
-  }
-  .second-close.popup-1 {
-    top: 6% !important;
-  }
-}
-@media (max-width: 375px) {
-  .popup .close {
-    top: 6%;
-  }
-  .second-popup .second-close.popup-0 {
-    top: 6% !important;
-  }
-  .second-close.popup-1 {
-    top: 6% !important;
+  .second-close.popup-1{
+    top: 9% !important;
   }
 }
