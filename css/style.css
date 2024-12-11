@@ -3321,7 +3321,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 @media (max-width: 435px) {
   .new_close_new {
     right: 95px;
@@ -3332,7 +3332,7 @@ footer .copyright {
   .new_close_new {
     right: 85px;
   }
-}
+} */
 
 .pop-in {
   position: relative;
@@ -3358,7 +3358,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 @media (max-width: 435px) {
   .second-close-btn {
     right: 95px;
@@ -3368,5 +3368,12 @@ footer .copyright {
 @media (max-width: 375px) {
   .second-close-btn {
     right: 85px;
+  }
+}
+
+ */
+@media (max-width:768px){
+  .plan-pop-fix{
+    width: 74%;
   }
 }
