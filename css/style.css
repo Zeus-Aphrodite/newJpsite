@@ -822,6 +822,10 @@ h5 {
   max-width: 500px;
 }
 
+.area-4 .type .type-k-bg {
+  opacity: 0.7;
+}
+
 .area-4 .green.pop-fix {
   position: fixed;
   width: 100%;
@@ -916,7 +920,6 @@ h5 {
   text-align: center;
   position: relative;
   display: inline-block;
-  color: var(--main-color);
   z-index: 1;
   display: inline-block;
   margin: 3rem auto 0;
@@ -939,7 +942,7 @@ h5 {
   align-items: center;
   gap: 1rem;
   justify-content: center;
-  margin: 1rem auto 5rem;
+  margin: 1rem auto 9rem;
 }
 
 .area-4 .type .card-2.pop-in-b {
@@ -953,8 +956,14 @@ h5 {
 
 .area-4 .type .card-2 .text {
   font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.area-4 .type .travel{
   color: var(--main-color);
   font-weight: 600;
+  margin-top: 1.5rem;
+
 }
 
 .area-4 .type .off {
@@ -2238,7 +2247,7 @@ td {
 .area-8 {
   width: 90%;
   max-width: 780px;
-  margin: 2.5% auto 0;
+  margin: 2.5% auto 48px;
 }
 
 .area-8 .container-1 {
@@ -2345,7 +2354,7 @@ td {
 .area-9 {
   width: 100%;
   background-color: var(--bg-color-2);
-  padding: 2.4rem 5%;
+  padding: 4.8rem 5%;
 }
 
 .area-9 .accordion-wrapper {
@@ -2821,6 +2830,11 @@ td {
   padding-bottom: 0.8rem;
 }
 
+.area-12 p {
+  font-size: 1.4rem;
+  margin-left: 1.8rem;
+}
+
 @media (max-width: 770px) {
   .area-12 {
     padding: 3.2rem 0.8rem;
@@ -2839,6 +2853,10 @@ td {
 
   .area-12 li {
     width: 100%;
+  }
+
+  .area-12 p {
+    margin-left: 0;
   }
 }
 
