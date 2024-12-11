@@ -110,11 +110,11 @@ h5 {
 .d-title::before {
   content: "";
   position: absolute;
-  left: -25px;
-  bottom: 0;
-  width: 20px;
-  height: 18px;
-  background: url(../../../css/img/off-left.png) no-repeat center;
+  left: -15px;
+  bottom: 3px;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/off-left.png) no-repeat center;
   background-size: contain;
 }
 
@@ -140,11 +140,11 @@ h5 {
 .d-title::after {
   content: "";
   position: absolute;
-  right: -25px;
-  bottom: 0;
-  width: 20px;
-  height: 18px;
-  background: url(../../../css/img/off-right.png) no-repeat center;
+  right: -15px;
+  bottom: 3px;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/off-right.png) no-repeat center;
   background-size: contain;
 }
 
@@ -616,9 +616,9 @@ h5 {
   content: "";
   position: absolute;
   left: -20px;
-  bottom: 0;
-  width: 1.5rem;
-  height: 1.5rem;
+  bottom: 3px;
+  width: 2rem;
+  height: 2rem;
   background: url(../img/off-left.png) no-repeat center;
   background-size: contain;
 }
@@ -627,9 +627,9 @@ h5 {
   content: "";
   position: absolute;
   right: -20px;
-  bottom: 0;
-  width: 1.5rem;
-  height: 1.5rem;
+  bottom: 3px;
+  width: 2rem;
+  height: 2rem;
   background: url(../img/off-right.png) no-repeat center;
   background-size: contain;
 }
@@ -823,7 +823,11 @@ h5 {
 }
 
 .area-4 .type .type-k-bg {
-  opacity: 0.7;
+  background-color: #4E948B!important;
+}
+
+.area-4 .type .type-k-cl {
+  color: #4E948B!important;
 }
 
 .area-4 .green.pop-fix {
@@ -1855,9 +1859,9 @@ td {
   position: absolute;
   left: -20px;
   bottom: 3px;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: url(../../../css/img/off-left.png) no-repeat center;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/off-left.png) no-repeat center;
   background-size: contain;
 }
 
@@ -1885,9 +1889,9 @@ td {
   position: absolute;
   right: -20px;
   bottom: 3px;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: url(../../../css/img/off-right.png) no-repeat center;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/off-right.png) no-repeat center;
   background-size: contain;
 }
 
@@ -3185,9 +3189,7 @@ footer .copyright {
   .popup .close {
     top: 13%;
   }
-  .plan-pop-fix{
-    width: 74%;
-  }
+
   .second-popup .second-close.popup-0 {
     top: 20% !important;
   }
@@ -3292,7 +3294,7 @@ footer .copyright {
 
 .plan-pop-fix {
   position: fixed;
-  width: 74%;
+  width: 100%;
   max-width: 500px;
   background-color: var(--white-color);
   z-index: 11;
@@ -3320,17 +3322,17 @@ footer .copyright {
   align-items: center;
 }
 
-/* @media (max-width: 435px) {
+@media (max-width: 435px) {
   .new_close_new {
     right: 95px;
   }
-} */
+}
 
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
   .new_close_new {
     right: 85px;
   }
-} */
+}
 
 .pop-in {
   position: relative;
@@ -3357,7 +3359,7 @@ footer .copyright {
   align-items: center;
 }
 
-/* @media (max-width: 435px) {
+@media (max-width: 435px) {
   .second-close-btn {
     right: 95px;
   }
@@ -3367,4 +3369,4 @@ footer .copyright {
   .second-close-btn {
     right: 85px;
   }
-} */
+}
