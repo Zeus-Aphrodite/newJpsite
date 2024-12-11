@@ -3185,7 +3185,9 @@ footer .copyright {
   .popup .close {
     top: 13%;
   }
-
+  .plan-pop-fix{
+    width: 74%;
+  }
   .second-popup .second-close.popup-0 {
     top: 20% !important;
   }
@@ -3318,17 +3320,17 @@ footer .copyright {
   align-items: center;
 }
 
-@media (max-width: 435px) {
+/* @media (max-width: 435px) {
   .new_close_new {
     right: 95px;
   }
-}
+} */
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .new_close_new {
     right: 85px;
   }
-}
+} */
 
 .pop-in {
   position: relative;
@@ -3355,7 +3357,7 @@ footer .copyright {
   align-items: center;
 }
 
-@media (max-width: 435px) {
+/* @media (max-width: 435px) {
   .second-close-btn {
     right: 95px;
   }
@@ -3365,4 +3367,4 @@ footer .copyright {
   .second-close-btn {
     right: 85px;
   }
-}
+} */
